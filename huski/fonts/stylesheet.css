@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Ace Adventure';
+    src: local('Ace Adventure Regular'), local('Ace-Adventure'), url('../fonts/Ace-Adventure.woff2') format('woff2'), url('../fonts/Ace-Adventure.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

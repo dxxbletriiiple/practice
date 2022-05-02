@@ -1,0 +1,51 @@
+.privilege {
+  min-height: 472px;
+  padding: 70px 0 65px 0;
+  &__header {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: $secondc;
+  }
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+  }
+  &_item {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: $secondc;
+    margin-top: 35px;
+  }
+  &__descr {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: $secondc;
+    margin-top: 20px;
+    width: 269px;
+    a {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: $mainc;
+    }
+  }
+  &__heart {
+    animation: beat 2s ease infinite;
+  }
+}

@@ -1,0 +1,26 @@
+.slide {
+  min-height: 740px;
+  padding: 82px 0;
+  &__wrapper {
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -66px;
+      border: none;
+      background-color: #fff;
+      img {
+        width: 31px;
+        height: 21px;
+      }
+    }
+    .slick-next {
+      left: auto;
+      right: -66px;
+    }
+  }
+}

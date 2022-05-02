@@ -1,0 +1,228 @@
+.header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  padding: 0 8px 0 16px;
+  &__logo {
+    width: 138px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 32px;
+    &_txt {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      color: #000000;
+      text-transform: uppercase;
+    }
+  }
+  &__select {
+    border: none;
+    width: 236px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    -webkit-appearance: none;
+    background: url("../../images/icon/select.svg") no-repeat right;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 414px;
+    &__login {
+      display: none;
+      align-items: center;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+      span {
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+      }
+    }
+    &_pic {
+      &_img {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        background: url("../../images/profilepic.jpg") center center/cover no-repeat;
+        border-radius: 50%;
+
+        &::before {
+          position: absolute;
+          top: 1px;
+          right: 1px;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #ed2f2f;
+          z-index: 2;
+        }
+        &:after {
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          content: "";
+          width: 16px;
+          height: 16px;
+          background-color: #fff;
+          border-radius: 50%;
+          z-index: 1;
+        }
+      }
+      &_status {
+        display: flex;
+        justify-content: space-between;
+        width: 34px;
+        height: 4px;
+        margin-top: 3px;
+        span {
+          display: block;
+          height: 4px;
+          width: 6px;
+          background: rgba(0, 0, 0, 0.2);
+          &:first-child {
+            border-radius: 4px 0 0 4px;
+          }
+          &:last-child {
+            border-radius: 0 4px 4px 0;
+          }
+          &.active {
+            background: #0d870d;
+          }
+        }
+      }
+    }
+  }
+  &__notify,
+  &__dialog {
+    width: 56px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #00b4f0;
+    }
+  }
+  &__switch {
+    width: 98px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+  }
+  &__account {
+    width: 64px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 66px;
+  height: 28px;
+  border-radius: 36px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "ПЛЮС";
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.52);
+  height: 22px;
+  width: 50px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fa961e;
+  outline: none;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+  color: #fa961e;
+  outline: none;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 36px;
+}
+
+.slider.round:before {
+  border-radius: 36px;
+}
+
+.hamburger {
+  display: none;
+  width: 35px;
+  padding: 8px 3px;
+  margin-right: 12px;
+  cursor: pointer;
+  span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: rgba($color: #000000, $alpha: 0.2);
+    margin-bottom: 3px;
+    border-radius: 10px;
+    transition: 0.5s all;
+  }
+}

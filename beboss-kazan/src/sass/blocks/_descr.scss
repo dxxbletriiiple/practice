@@ -1,0 +1,25 @@
+.description {
+  width: 832px;
+  margin-top: 32px;
+  &__txt {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  ul {
+    padding-left: 14px;
+  }
+  &__img {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      transition: 0.3s;
+      margin-right: 10px;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

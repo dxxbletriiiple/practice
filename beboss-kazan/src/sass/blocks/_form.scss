@@ -1,0 +1,115 @@
+.form {
+  width: 832px;
+  min-height: 550px;
+  background: #eceef2;
+  border-radius: 16px;
+  margin-top: 32px;
+  padding: 24px;
+  &__consultant {
+    display: flex;
+    align-items: center;
+    &_img {
+      width: 48px;
+      height: 48px;
+      margin-right: 8px;
+    }
+    &_name,
+    &_job {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 376px;
+      height: 42px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      padding: 9px 12px 9px 44px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+      outline: rgb(97, 97, 97);
+      position: relative;
+      background-image: url("../../images/icon/person.svg");
+      background-position: 12px 9px;
+      background-repeat: no-repeat;
+      &:nth-child(2){
+      background-image: url("../../images/icon/mail.svg");
+      }
+      &:nth-child(3){
+        background-image: url("../../images/icon/phone.svg");
+        }
+    }
+    label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    textarea {
+      width: 376px;
+      height: 86px;
+      padding: 9px 12px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      font-size: 16px;
+      line-height: 24px;
+      outline: rgb(65, 65, 65);
+      margin-bottom: 8px;
+      resize: none;
+    }
+  }
+  &_btn {
+    margin-top: 8px;
+  }
+  &__link {
+    margin-top: 16px;
+    width: 376px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    a {
+      color: rgba($color: #000000, $alpha: 0.4);
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 16px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 16px;
+  }
+  &__list {
+    width: 376px;
+    height: 360px;
+    &_title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    ul {
+      list-style-type: none;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 16px;
+      padding-left: 32px;
+      li {
+        margin-bottom: 16px;
+        position: relative;
+        &:before {
+          content: url("../../images/icon/check.svg");
+          position: absolute;
+          left: -32px;
+          top: 0;
+        }
+      }
+    }
+  }
+  hr {
+    display: none;
+  }
+}

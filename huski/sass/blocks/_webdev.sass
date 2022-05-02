@@ -1,0 +1,56 @@
+.webdev
+    height: 142px
+    background-color: $mc
+    display: flex
+    align-items: center
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__txt
+        font-weight: 300
+        font-size: 30px
+        line-height: 130%
+        letter-spacing: -0.015em
+        color: #c4c4c4
+        a
+            font-family: 'Ace Adventure Cyrillic'
+            font-style: normal
+            font-weight: normal
+            font-size: 45px
+            line-height: 130%
+            letter-spacing: 0.045em
+            color: #c4c4c4
+            transition: 0.3s all
+            &:hover
+                text-decoration: none
+                text-shadow: 5px 5px 10px $red
+                color: #fff
+                font-size: 47px
+    &__links
+        width: 340px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a
+            &:hover
+                text-decoration: none
+                
+        i
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            background-color: #C4C4C4
+            display: flex
+            justify-content: center
+            align-items: center
+            color: $mc
+            font-size: 30px
+            transition: 0.3s all
+            &:hover
+                transform: scale(1.2)
+                background-color: $red
+                box-shadow: 5px 5px 10px $red
+                border: 1px solid $mc
+                color: #c4c4c4
+                text-decoration: none

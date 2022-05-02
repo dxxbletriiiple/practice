@@ -1,0 +1,169 @@
+.contest {
+  min-height: 800px;
+  padding-top: 28px;
+  &__back {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 338px;
+    height: 60px;
+    &:hover {
+      .contest__back_img_overlay {
+        display: block;
+      }
+    }
+    &_img {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      transition: all 1.3s;
+      &_overlay {
+        display: none;
+        background-color: rgba($color: #000000, $alpha: 0.52);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:before {
+          content: url("../../images/icon/back.svg");
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &_txt {
+      h2 {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 24px;
+  }
+  &__wrapper {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  &__video {
+    background: url("../../images/men_standing.jpg") center center/cover no-repeat;
+    width: 832px;
+    height: 468px;
+    border-radius: 17px;
+    &.play {
+      .contest__video_overlay {
+        display: none;
+      }
+    }
+    &_overlay {
+      display: block;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%);
+      width: 100%;
+      height: 100%;
+      position: relative;
+      border-radius: 17px;
+      &_txt {
+        width: 115px;
+        height: 152px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          display: block;
+          width: 115px;
+          height: 64px;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 32px;
+          text-align: center;
+          color: #fff;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  &__sidebar {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+
+    &_txt {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 16px;
+    }
+    &__social {
+      margin-top: 24px;
+    }
+    &__link {
+      display: block;
+      width: 256px;
+      height: 60px;
+      border-radius: 50px;
+      position: relative;
+      padding: 18px 45px 18px 75px;
+      background-color: #1f3b74;
+      margin-bottom: 8px;
+      span {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        color: #fff;
+      }
+      &:nth-child(2) {
+        background-color: #27466a;
+      }
+      &:nth-child(3) {
+        background-color: #d06313;
+      }
+      &_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #3b5998;
+        &.vk {
+          background-color: #4c6c91;
+        }
+        &.ok {
+          background-color: #f68634;
+        }
+      }
+    }
+    &_votes {
+      margin-top: 16px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "base/var";
+.button {
+    width: 153px;
+    height: 32px;
+    background: $main_color;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.3s all;
+    &:hover {
+        background: #FFF;
+        color: $main_color;
+        border: 1px solid $main_color;
+        box-shadow: 3px 3px 20px $main_color;
+        transform: translate(-3px, -3px);
+    }
+    &_main {
+        width: 300px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 80px;
+    }
+    &_submit {
+        width: 303px;
+        height: 58px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    &__mini {
+        width: 135px;
+        height: 44px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        transition: 0.3s all;
+    }
+}

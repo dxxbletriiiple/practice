@@ -1,0 +1,32 @@
+.review {
+    min-height: 920px;
+    padding-bottom: 48px;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        img {
+            display: block;
+            margin-right: 61px;
+            height: 169px;
+        }
+        &__header {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 18px;
+            color: $second_color;
+        }
+        &__sub {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #646464;
+        }
+        &__rev {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            color: $second_color;
+        }
+    }
+}

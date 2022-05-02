@@ -1,0 +1,142 @@
+.footer {
+  padding: 40px 48px 16px 48px;
+  background: #333;
+  height: 557px;
+  margin-left: 303px;
+  &__top{
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    &_txt {
+      color: #fff;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+    &_link {
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 32px;
+      position: relative;
+      transition: all 0.3s;
+      opacity: .4;
+      &:hover {
+      opacity: 1;
+      }
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+        top: -4px;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+  }
+  &_title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    opacity: 0.6;
+    transition: all .3s;
+  }
+  &__list {
+    list-style-type: none;
+    width: 256px;
+    &_link {
+        margin-top: 18px;
+        opacity: 0.6;
+        transition: all .3s;
+      a {
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &:hover {
+        opacity: 1;
+        .footer_title{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__social, &__sections {
+    ul {
+    padding-left: 32px;
+    }
+    a {
+      position: relative;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        position: absolute;
+        left: -32px;
+        top: -4px;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    .beboss_official {
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+      opacity: 0.4;
+      margin-right: 24px;
+    }
+  }
+  &__countries {
+    display: flex;
+    width: 557px;
+    justify-content: space-between;
+    align-items: center;
+    &_title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+      opacity: 0.4;
+    }
+    a {
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      opacity: 0.4;
+      transition: all 0.3s;
+      img {
+        margin-right: 8px;
+      }
+      &:hover {
+          opacity: 1;
+      }
+    }
+  }
+  &__liveint {
+    display: flex;
+    align-items: center;
+  }
+}

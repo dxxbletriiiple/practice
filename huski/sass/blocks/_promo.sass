@@ -1,0 +1,51 @@
+.promo
+    background: url(../img/main.jpg) center center/cover no-repeat
+    min-height: 100vh
+    padding-top: 285px
+    position: relative
+    background-attachment: fixed
+    &__wrapper 
+        display: flex
+        justify-content: space-between
+    &__header 
+        font-weight: bold;
+        font-size: 150px;
+        line-height: 176px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    &__subheader 
+        font-size: 30px;
+        line-height: 120%;
+        color: #FFFFFF;
+        width: 540px
+    &__descr
+        ul
+            margin-bottom: 0
+        li
+            font-size: 27px;
+            color: #FFFFFF;
+            list-style-type: none
+            position: relative
+            transition: 0.3s all
+            &:hover
+                text-shadow: 5px 5px 10px #fff
+            &:nth-child(1)
+                margin-bottom: 48px
+                &:before
+                    content: url(../icons/cal.svg)
+                    position: absolute
+                    left: -45px
+                    top: 4px
+            &:nth-child(2)
+                margin-bottom: 48px
+                &:before
+                    content: url(../icons/time.svg)
+                    position: absolute
+                    left: -45px
+                    top: 4px
+            &:nth-child(3)
+                &:before
+                    content: url(../icons/map.svg)
+                    position: absolute
+                    left: -45px
+                    top: 4px

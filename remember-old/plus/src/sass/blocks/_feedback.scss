@@ -1,0 +1,37 @@
+.feedback {
+  padding-bottom: 48px;
+  .title {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  &__img {
+    height: 170px;
+    width: 170px;
+    margin-right: 60px;
+  }
+  &__user {
+    color: #0d0d0d;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+  span {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #646464;
+  }
+  &__descr {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #0d0d0d;
+    margin-top: 10px;
+  }
+}

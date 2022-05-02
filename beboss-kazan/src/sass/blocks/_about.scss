@@ -1,0 +1,12 @@
+.about {
+  margin-top: 118px;
+  width: 832px;
+  &_txt {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 27px;
+    strong {
+      font-weight: normal;
+    }
+  }
+}

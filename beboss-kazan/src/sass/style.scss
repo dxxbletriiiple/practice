@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.container {
+  padding: 0 48px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: 303px;
+}
+
+a {
+  text-decoration: none;
+}
+hr {
+  border-bottom: none;
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 16px;
+}
+@import "base/btn";
+@import "base/franchise_link";
+@import "base/title";
+
+@import "blocks/header";
+@import "blocks/sidebar";
+@import "blocks/contest";
+@import "blocks/personal-solution";
+@import "blocks/about";
+@import "blocks/price";
+@import "blocks/descr";
+@import "blocks/form";
+@import "blocks/other_members";
+@import "blocks/right";
+@import "blocks/footer";
+@import "blocks/media";

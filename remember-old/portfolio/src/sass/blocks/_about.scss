@@ -1,0 +1,8 @@
+.about {
+  &__wrapper {
+    display: grid;
+  }
+  &__title {
+    @include before_circle;
+  }
+}

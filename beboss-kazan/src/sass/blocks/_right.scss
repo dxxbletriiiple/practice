@@ -1,0 +1,19 @@
+.right_sidebar {
+  float: right;
+  height: 305px;
+  margin-top: 118px;
+  &__list {
+    list-style-type: none;
+    li {
+      margin-top: 16px;
+    }
+    .bold,
+    .regular {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  }
+}

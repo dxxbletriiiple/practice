@@ -1,0 +1,22 @@
+.btn {
+  width: 376px;
+  height: 50px;
+  background: #0d870d;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  &.header__btn {
+    width: 139px;
+    height: 42px;
+    font-weight: normal;
+  }
+  &.personal-solution_btn {
+    width: 232px;
+    margin-top: 16px;
+  }
+}
